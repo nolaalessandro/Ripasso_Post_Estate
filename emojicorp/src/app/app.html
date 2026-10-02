@@ -1,12 +1,23 @@
 <nav class="navbar navbar-expand navbar-dark bg-dark px-3">
   <a class="navbar-brand">EmojiCorp</a>
   <ul class="navbar-nav">
+
+    <!-- Link della Fase 2 (componenti separati) -->
     <li class="nav-item">
       <a class="nav-link" routerLink="/animals" routerLinkActive="active-menu">Animali</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" routerLink="/fruits" routerLinkActive="active-menu">Frutta</a>
     </li>
+
+    <!-- Link della Fase 3 (componente generico) -->
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/generic', 'animals']" routerLinkActive="active-menu">Animali (generic)</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/generic', 'fruits']" routerLinkActive="active-menu">Frutta (generic)</a>
+    </li>
+
   </ul>
 </nav>
 
